@@ -4,12 +4,12 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Human Health</Text>
+      <Text style={styles.title}>Welcome to Health App</Text>
       <Button
-        title="Enter"
-        onPress={() => navigation.navigate('DataView', { data: [] })}
+        title="Create Account"
+        onPress={() => navigation.navigate('UserRegistration')}
       />
-    </View> 
+    </View>
   );
 };
 
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 16,
-    color: '#000',
+    color: '#007AFF', // Cor azul semelhante ao estilo da Apple
   },
 });
 
