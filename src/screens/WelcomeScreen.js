@@ -9,6 +9,12 @@ const WelcomeScreen = ({ navigation }) => {
         title="Create Account"
         onPress={() => navigation.navigate('UserRegistration')}
       />
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>
+          <Text style={styles.poweredBy}>Powered by</Text>{' '}
+          <Text style={styles.italic}>Sakura Code Projects</Text>
+        </Text>
+      </View>
     </View>
   );
 };
@@ -25,7 +31,24 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 16,
-    color: '#007AFF', // Cor azul semelhante ao estilo da Apple
+    color: '#007AFF',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 16,
+    left: 16,
+    right: 16,
+    alignItems: 'center',
+  },
+  footerText: {
+    fontSize: 12,
+    color: '#888',
+  },
+  poweredBy: {
+    fontWeight: 'bold',
+  },
+  italic: {
+    fontStyle: 'italic',
   },
 });
 
