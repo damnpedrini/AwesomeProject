@@ -6,9 +6,7 @@ const EditDataScreen = ({ navigation, route }) => {
   const [editedData, setEditedData] = useState(data);
 
   const handleSave = () => {
-    // Adicione aqui a lógica para salvar os dados editados
-    // Por exemplo, você pode atualizar o AsyncStorage ou um banco de dados
-    // Depois, você pode navegar de volta para a tela de visualização
+    // Adicionar aqui a lógica para salvar os dados editado em um futuro banco de dados
     navigation.navigate('DataView', { data: editedData });
   };
 

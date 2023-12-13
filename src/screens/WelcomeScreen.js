@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Health App</Text>
+      <Text style={styles.title}>Welcome to Human Health</Text>
       <Button
         title="Create Account"
         onPress={() => navigation.navigate('UserRegistration')}
@@ -32,6 +32,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
     color: '#007AFF',
+  },
+  logo: {
+    width: 100, // ajuste conforme necessário
+    height: 100, // ajuste conforme necessário
+    marginTop: 16,
   },
   footer: {
     position: 'absolute',
