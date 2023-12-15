@@ -5,9 +5,11 @@ const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Human Health</Text>
+      
       <Button
         title="Create Account"
         onPress={() => navigation.navigate('UserRegistration')}
+        color="#FF6961"
       />
       <View style={styles.footer}>
         <Text style={styles.footerText}>
